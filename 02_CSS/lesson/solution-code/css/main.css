@@ -1,0 +1,118 @@
+/* There are many ways to target elements in CSS */
+
+/* WILDCARD */
+* {
+  /* overlays every item on the page with an outline. VERY useful for development */
+  outline: 1px solid orange;
+}
+
+/* ELEMENTS */
+body {
+  /* Its common to remove default styles */
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: blue;
+  text-decoration: underline;
+}
+
+/* To target multiple selectors, separate them with a comma */
+h1,
+h4 {
+  text-align: center;
+}
+
+/* CLASSES and IDs */
+/* IDs are unique to a document and highly specific */
+
+#specificColor {
+  color: brown;
+}
+
+.color {
+  font-size: 30px;
+}
+
+.color1 {
+  color: aqua;
+}
+
+.color2 {
+  color: #ac2399;
+}
+
+.color3 {
+  color: rgb(27, 125, 48);
+}
+
+/* Spacing */
+
+.box {
+  /* content */
+  width: 150px;
+  height: 80px;
+  /* padding - top-right-bottom-left */
+  padding: 20px 40px 20px 40px; /* or 20px 40px; */
+  /* border - width-style-color */
+  border: 5px solid black;
+  /* margin */
+  margin: 40px;
+}
+
+/* Flexbox is a powerful way to position your elements */
+.hero {
+  width: 100%;
+  height: 200px;
+  /* Use the below 3 for perfect centering  */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  width: 300px;
+  text-align: justify;
+}
+
+/* the 'Cascading' part of CSS */
+th,
+td {
+  padding: 15px;
+  color: red;
+}
+
+tr {
+  text-align: center;
+}
+
+thead th {
+  color: green;
+}
+/* All links in the table */
+table a {
+  color: purple;
+}
+
+/* Only links in the head */
+thead a {
+  font-size: 30px;
+}
+
+.row {
+  background: pink;
+}
+
+/* !!!!!!! BAD PRACTICES !!!!!!! */
+
+/* IDs */
+/* Applying CSS using IDs is considered very bad practice as it is highly specific and thus near impossible to override Use classes or attributes instead */
+#h-rule {
+  margin: 20px 0;
+}
+
+/* !important */
+thead th {
+  background: rgb(0, 255, 55) !important;
+}
