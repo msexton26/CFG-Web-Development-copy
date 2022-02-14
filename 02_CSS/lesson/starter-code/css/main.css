@@ -1,0 +1,25 @@
+#specificColour{
+    color: brown;
+  }
+  
+  .colour{
+    font-size: 30px;
+  }
+  
+  .colour1{
+    color: aqua;
+  }
+  
+  .colour2{
+    color: #ac2399;
+  }
+  
+  .colour3{
+    color: rgb(27, 125, 48);
+  }
+
+ /* 
+ *{
+      outline: 1px solid orange;
+  }
+*/
