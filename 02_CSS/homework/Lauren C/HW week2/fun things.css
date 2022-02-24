@@ -1,0 +1,21 @@
+.title{color: darkgreen;}
+html{
+    background-image: linear-gradient(mintcream, darkgreen);
+    /* background-color: mintcream; */
+    
+}
+
+
+.div2{padding-left: 50px;
+padding-top: 50 px;
+padding-right: 50 px;
+padding-bottom: 50 px;
+}
+.div1{padding-left: 50px;
+    padding-top: 20px;
+    padding-right: 50 px;
+    padding-bottom: 20 px;
+border: slategrey;
+border-style: dotted;
+text-align: justify;}
+

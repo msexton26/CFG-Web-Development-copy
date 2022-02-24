@@ -1,0 +1,71 @@
+
+h1,h2{
+    color: black;
+    text-align: center;
+    
+}
+p{
+  font-size: 15px;
+  text-align: center;
+  border: 5px solid black;
+  background-color: white;
+}
+ol
+{
+  text-align: center;
+  list-style-position: inside;
+  
+}
+body{
+    margin:0;
+    padding: 0px;
+    font-family: "Righteous", serif;
+    background-color: aliceblue;
+   
+}
+#interest img{
+    width:30%;
+    height:30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  .nav li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+    
+    
+  }
+  .nav{
+    align-content: center;
+    text-align: center;
+    border: 13px solid black;
+    margin: 30px;
+    background-image: url("https://wallpapercave.com/wp/wp8343401.jpg");
+  }
+  footer
+  {
+    position: relative;
+    background-size: cover;
+    align-content: center;
+    text-align: center;
+    font-family: "Righteous", serif;
+    margin: 0px;
+    max-width: 10000px;
+    height: 50px;
+    background-image: url("https://wallpapercave.com/wp/wp8343401.jpg");
+  }
+  footer li
+  {
+    display: inline-block;
+    padding: 10px;
+    color:blueviolet;
+  }
+   #Me,#interest,#course{
+  
+    margin: auto,30px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
