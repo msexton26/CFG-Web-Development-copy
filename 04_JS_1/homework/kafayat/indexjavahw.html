@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Java Script Game</title>
+        <body>
+            <script>
+                
+                alert("Would you like to play a game?")
+
+                var gameResponse = prompt("Yes or No")
+
+                if(gameResponse == "No") {alert("Are you sure, all players report the game as quite fun!")}
+
+                if(gameResponse == "No") var newResponse = prompt("I am sure or I will play")
+                if(newResponse == "I am sure") {alert("Maybe next time!");script.stop;}
+                else if(newResponse == "I will play") {alert("How many national flags are there?")}
+
+               if(gameResponse == "Yes") {alert("How many national flags are there?")}
+
+                var answer1 = prompt("193, 195, 197")
+
+                if(answer1 == "193") {alert("Well done Player! Now, which country features the colour blue in their flag?")}
+                if (answer1 == "195") {alert("OOH so close!");script.stop;}
+                if (answer1 == "197") {alert("Hard Luck Loser!");script.stop;}
+
+                var answer2 = prompt(["South Korea", "Nigeria", "Canada"])
+                if(answer2 == "South Korea") {alert("Wow, you seem smarter than I thought! Now I want to ask you a personal question. How many books do you like to read a week?")} 
+                else{alert("You should probably read more, but well done on getting this far!");script.stop}
+
+                var books
+                var books = prompt("How many books do you read in a week?")
+                if( books > 3){alert("Wow, I can certainly see why you've done so well." )}else{alert("You should read more to build up your wealth on knowledge!")}
+
+
+
+            </script>
+        </body>
+    </head>
+</html>
+

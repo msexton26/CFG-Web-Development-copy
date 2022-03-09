@@ -1,5 +1,5 @@
 // DATA TYPES 
-
+alert("hello")
 // DATA TYPES EXERCISE
 
 // IF/ELSE STATEMENTS 

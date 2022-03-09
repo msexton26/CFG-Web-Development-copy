@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+       
+        <title>JavaScript game</title>
+
+    </head>
+
+    <body>
+        <script>
+            //opening question
+            alert("Do you want to play a geography game? Press Ok and then give your response")
+           var gameResponse = prompt("Yes or No")
+
+          
+            if (gameResponse=="Yes" || gameResponse=="yes"){
+
+            for (let i = 0; i < 5 ; i++){
+            
+            var count = 5-i
+             //correct answer loop
+               var countyResponse = prompt ("Great! You have " + count + " attempts. What is the biggest county in the Ireland?")
+                if (countyResponse == "Cork" || countyResponse == "cork"){
+                    alert("Well done! You know your Irish Geography.")
+                let i=i+6;}
+                
+                
+                    //incorrect answer loop 
+                else{
+                    var newResponse = prompt("Hard Luck. Do you want a clue? Yes or No")
+                    if(newResponse == "Yes" || newResponse == "yes"){
+                        
+                    alert("It's used to close a wine bottle!")}
+
+                    else{
+                        alert("Ok, let's try again!")}}
+                    
+                            }
+            
+                }
+               
+            
+            else{
+                alert("Ok! Maybe next time")
+                }
+        
+        </script>
+
+    </body>
+
+</html>
