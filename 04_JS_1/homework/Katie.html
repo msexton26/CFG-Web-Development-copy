@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>JavaScript game</title>
+
+    </head>
+
+    <body>
+
+        <script>
+
+           alert("Do you want to play a game?")
+           var gameResponse = prompt("Yes or No?")
+           if (gameResponse == "yes" || gameResponse == "Yes"){
+              var animal = prompt("Let's play! Do you prefer dogs or cats?")
+              if (animal == "dogs"){
+                  var walk = prompt("Where will you walk your dog? street or park")
+                  if (walk == "street"){
+                      alert("Your dog is sad")
+                      }else{
+                          alert("Your dog is happy")
+                      }
+              }else{
+                  var toy = prompt("What toy will you use to play with your cat? string or stick")
+                  if (toy == "string"){
+                      alert("Your cat is happy")
+                  }else{
+                      alert("Your cat is sad")
+                  }
+              }
+            }else{
+            alert("Maybe next time")
+            }
+            
+        </script>
+
+    </body>
+
+</html>

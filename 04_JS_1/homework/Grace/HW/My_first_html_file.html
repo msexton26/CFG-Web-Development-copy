@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first script</title>
+    <script src="My first script.js"></script>
+   
+</head>
+<body>
+    
+
+
+
+
+
+
+
+    <script>
+        prompt("Hello! What is your name?");
+        var userResponse = prompt("Its nice to meet you! Do you want to play a geussing game? yes or no");
+    
+        if (userResponse== "yes"){
+            prompt("Great! First Question: What is my favourite colour? red, blue or yellow? (3 attempts)")
+        }else{
+            alert("You suck! :(")
+        }
+        
+        if (userResponse== "pink"){
+            alert("Correct!")
+        }else{
+            attempt --;// Decrementing by one.
+            var attempt = 2;
+alert("Wrong! You have "+attempt+" attempts left;");
+prompt("What is my favourite colour? red, blue or yellow?")
+var attempt = 1;
+alert("Wrong! You have "+attempt+" attempts left;");
+prompt("What is my favourite colour? red, blue or yellow?")
+if( attempt == 1)
+alert("Lol I actually dont have a favourite colour hehe! ;)");
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>JavaScript game</title>
+
+    </head>
+
+    <body>
+
+        <script>
+            alert("Do you want to a game?");
+            var gameResponse = prompt("Yes or No");
+            if(gameResponse.toLowerCase() == "yes"){
+                var Name = prompt("Pick a name");
+                var Q1 = prompt(Name +", Are  you going to school, stay at home or to work(answer must be one word)");
+                if(Q1.toLowerCase()=="school"){
+                    alert("Well done, you choose school");
+                    alert("which subject are you going to study()");
+                    var Q2 = prompt("Math , English, French, Computer");
+                    var count = 0;
+                    if(Q2.toLowerCase() == "math"){
+                        if(prompt("2+2")=="4"){
+                            count = count + 1;
+                        }
+                        if(prompt("2/5")=="2/5"){
+                            count = count + 1;
+                        }
+                        if(prompt("10%10")=="0"){
+                            count = count+1;
+                        }
+                        if(prompt("(90+2)*3+14")=="290"){
+                            count = count+1;
+                        }
+                        alert(count+"/4");
+                        alert("Well done you win the game");
+                    }
+                    else if(Q2.toLowerCase() == "english"){
+                        alert("You die because english is to hard to learn.");
+                    }
+                    else if(Q2.toLowerCase() == "french"){
+                        if(prompt("read")=="lire"){
+                            count = count + 1;
+                        }
+                        if(prompt("amour")=="love"){
+                            count = count + 1;
+                        }
+                        if(prompt("Je vais au magasin")=="i go to the shop"){
+                            count = count+1;
+                        }
+                        if(prompt("liberté")=="freedom"){
+                            count = count+1;
+                        }
+                        alert(count+"/4");
+                        alert("Well done you win the game");
+                    }
+                    else if(Q2.toLowerCase() == "Computer Science"){
+                        alert("you die due to over stress");
+                    }
+                    else{
+                        alert(" you don't studied "+Q2.toLowerCase());
+                    }
+        
+                    
+                }
+                else if(Q1.toLowerCase()=="work"){
+                    alert("It is your day off relax and have some fun."+Name);
+                    alert("you lost the game");
+                }
+                else if(Q1.toLowerCase()=="home"){
+                    alert("Stop being lazy and go outside "+Name.toUpperCase())
+                    alert("you lost the game");
+                }
+                else{
+                    alert(Name.toUpperCase()+" why didn't you pick any of the option. Well you lost game anyway :-)");
+                }
+
+
+            }
+            else{
+                alert("Maybe next time.");
+            }
+        </script>
+
+    </body>
+
+</html>

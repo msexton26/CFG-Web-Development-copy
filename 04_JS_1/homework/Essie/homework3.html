@@ -1,0 +1,52 @@
+!DOCTYPE html>
+<html>
+
+    <head>
+       
+        <title>Ghana game</title>
+
+    </head>
+
+    <body>
+        <script>
+            //opening question
+            alert("Do you want to play the Ghana game? ")
+           var gameResponse = prompt("Yes or No")
+
+          
+            if (gameResponse=="Yes" || gameResponse=="yes"){
+
+            for (let i = 0; i < 5 ; i++){
+            
+            var count = 5-i
+             //correct answer loop
+               var popResponse = prompt ("Great! You have " + count + " attempts. What is the population of Ghana?")
+                if (popResponse == "31 million" || popResponse == "31m"){
+                    alert("Well done! ")
+                let i=i+6;}
+                
+                
+                //incorrect answer loop 
+                else{
+                    var newResponse = prompt("Oh well! Do you want a clue? Yes or No")
+                    if(newResponse == "Yes" || newResponse == "yes"){
+                        
+                    alert("it is close to 30 million!")}
+
+                    else{
+                        alert("You can do it!")}}
+                    
+                            }
+
+                }
+               
+            
+            else{
+                alert("Ok! Maybe next time")
+                }
+        
+        </script>
+
+    </body>
+
+</html>
