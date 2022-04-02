@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:60}
+.mySlides {display: none}
+img {vertical-align: center;}
+
+/* Slideshow container */
+.slideshow-container {
+  position: left;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: white;
+  font-size: 30px;
+  padding: 15px 30px;
+  position:absolute;
+  text-align: center;
+  width: 100%;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="https://cdn.images.express.co.uk/img/dynamic/14/590x/hot-drinks-takeaway-drinks-1583546.jpg?r=1647793150779" style="height: 400px; width: 1100px;">
+  <div class="text">Check out our New and Improved Horoscope Menu!</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="https://media.istockphoto.com/photos/cup-of-cafe-latte-with-coffee-beans-and-cinnamon-sticks-picture-id505168330?k=20&m=505168330&s=612x612&w=0&h=_InDMERgMkCfoNA-FUfRq0rYleC2xctGmSItIGeD8R4=" style="height: 400px; width: 1100px;">
+  <div class="text">New Latte Flavour: Strawberries and Cream! (Click to find out more!)</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="https://www.howtogeek.com/wp-content/uploads/2021/01/google-maps-satellite.png?height=200p&trim=2,2,2,2" style="height: 400px; width: 1100px;">
+  <div class="text">We now deliver straight to your home (Find out more)</div>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <img src="https://adulteducationnorthcountydublin.ie/wp-content/uploads/2021/05/Social-Media.jpg" style="height: 400px; width: 1100px;">
+    <div class="text">Follow us on Social Media to never miss new updates!)</div>
+  </div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<link href="stylesheet.css" rel="stylesheet">
+
+<body>
+       
+    <img class="logo" src="file:///C:/Users/Administrator.ADMINTR-TINB4RF/Downloads/Sweets%20'n%20treats.png" alt="SweetsnTreatsLogo" style="width:150px;height:144px;">
+    
+
+<ul class="nav-container">
+    <li><a href="file:///C:/Users/Administrator.ADMINTR-TINB4RF/Documents/GitHub/Code-FIrst-Girls/Cafe%20Page.html" target="_blank">Home</a></li>
+    <li><a href="Horoscope Menu.html" target="_blank">Horoscope Menu</a></li> 
+    <li><a href="file:///C:/Users/Administrator.ADMINTR-TINB4RF/Documents/GitHub/Code-FIrst-Girls/Cafe%20Page.html" target="_blank">Delivery</a></li>
+    <li><a href="file:///C:/Users/Administrator.ADMINTR-TINB4RF/Documents/GitHub/Code-FIrst-Girls/Cafe%20Page.html" target="_blank">Careers</a></li>
+    <li><a href="file:///C:/Users/Administrator.ADMINTR-TINB4RF/Documents/GitHub/Code-FIrst-Girls/Cafe%20Page.html" target="_blank">Contact us</a></li>
+
+    
+
+  </ul>
+
+
+
+</body>
+
+
+
+</html>

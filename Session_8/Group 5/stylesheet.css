@@ -1,0 +1,60 @@
+body {background-color: #b81818;}
+.nav-container {
+    padding: 30px;
+    font-family: 'Covered By Your Grace', cursive;
+    }
+​
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    li a {
+        display: block;
+        width: 70px;
+        color: black;
+        background-color: #fceda2;
+        
+    }
+    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #b81818;
+      }
+      
+      li {
+        float:left;
+        text-align: center;
+        padding: 30px 70px
+        
+      }
+      
+      li a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+    
+      li a:hover {
+        background-color: rgb(214, 180, 140);
+      }
+
+
+
+.logo{
+  position: absolute;
+    top: 12px;
+    right: 9px;
+    border: 3px solid #941212
+    
+}
+
+* {box-sizing:border-box}
+
+
