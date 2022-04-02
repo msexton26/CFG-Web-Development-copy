@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Discover artists, artworks, ideas for your own art, or places where you could buy artworks.</title>
+        <link rel="discover style sheet" href="discover style.css">
+        <style>
+            nav{
+                display: flex;
+                box-sizing: border-box;
+                width: 100%;
+                background-color: whitesmoke;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                justify-content: space-around;
+                align-content: flex-start;
+            }
+            body{
+                display: block;
+                background-color: lightgray;
+            }
+
+            .border-box {
+                display: block;
+                box-sizing: border-box;
+                width: 15%;
+                border: 10px;
+                padding: 5px;
+            }
+
+            .a {
+                display: block;
+                box-sizing: border-box;
+                border: #5B6DCD;
+                width: 5%s;
+            }
+            
+            .image {
+                display: flex;
+                width: 100%;
+                padding-top: 20px;
+                margin-inline-start: 10px;
+            }
+            .byline{
+                text-align:center;
+                font-size:18px;
+            }
+
+            .searchbox{
+                background-color:#fffbf8;
+                padding:13px;
+                width:335px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                -webkit-box-sizing:border-box;
+                -moz-box-sizing:border-box;
+                box-sizing:border-box;
+                border-radius:6px;
+               -webkit-box-shadow:
+                0 2px 4px 0 rgba(72, 72, 72, 0.83),
+                0 10px 15px 0 rgba(126, 126, 126, 0.12),
+                0 -2px 6px 1px rgba(199, 199, 199, 0.55) inset, 
+                0 2px 4px 2px rgba(255, 255, 255, 0.83) inset;
+                -moz-box-shadow: 
+        0 2px 4px 0 rgba(72, 72, 72, 0.83),
+        0 10px 15px 0 rgba(126, 126, 126, 0.12),
+        0 -2px 6px 1px rgba(199, 199, 199, 0.55) inset, 
+        0 2px 4px 2px rgba(255, 255, 255, 0.83) inset;
+                box-shadow: 
+                0 2px 4px 0 rgba(72, 72, 72, 0.83),
+        0 10px 15px 0 rgba(126, 126, 126, 0.12),
+        0 -2px 6px 1px rgba(199, 199, 199, 0.55) inset, 
+        0 2px 4px 2px rgba(255, 255, 255, 0.83) inset;
+}
+           input[type="search"]{
+    width:250px;
+    height:30px;
+    padding-left:15px;
+    border-radius:6px;
+    border:none;
+    color:#939393;
+    font-weight:500;
+    background-color:#fffbf8;
+    -webkit-box-shadow:
+        0 -2px 2px 0 rgba(199, 199, 199, 0.55),
+        0 1px 1px 0 #fff,
+        0 2px 2px 1px #fafafa,
+        0 2px 4px 0 #b2b2b2 inset,
+        0 -1px 1px 0 #f2f2f2 inset,
+        0 15px 15px 0 rgba(41, 41, 41, 0.09) inset;
+    -moz-box-shadow: 
+        0 -2px 2px 0 rgba(199, 199, 199, 0.55),
+        0 1px 1px 0 #fff,
+        0 2px 2px 1px #fafafa,
+        0 2px 4px 0 #b2b2b2 inset,
+        0 -1px 1px 0 #f2f2f2 inset,
+        0 15px 15px 0 rgba(41, 41, 41, 0.09) inset;
+    box-shadow:
+        0 -2px 2px 0 rgba(199, 199, 199, 0.55),
+        0 1px 1px 0 #fff,
+        0 2px 2px 1px #fafafa,
+        0 2px 4px 0 #b2b2b2 inset,
+        0 -1px 1px 0 #f2f2f2 inset,
+        0 15px 15px 0 rgba(41, 41, 41, 0.09) inset;
+}
+          button[type="submit"]{
+              width:35px;
+              height:30px;
+              color: black;
+              background-repeat: no-repeat;
+              background-position: 10px 5px;
+              background-color:transparent;
+              -webkit-background-size:20px 20px;
+              background-size:20px 20px;
+              border:none;
+              cursor:pointer;
+}
+          input[type="search"]:focus{
+              outline:0;
+            }
+            
+
+           
+
+        </style>
+    </head>
+
+
+    <body>
+        <nav>
+            <div id="page" class="flexcontainer">
+                <header id="masthead" class="site-header" href="file:///C:/Users/Anelia/OneDrive%20-%20Technological%20University%20Dublin/Coding/CFG%20Introduction%20to%20Web%20Development/Project%20work/Development/Backbone%20html.html">
+                    <div class="wrapper" >
+                        <div class="primaryHeader fadeIn">
+                            <div class="site-branding">
+                                <h1 class="site-title" href="file:///C:/Users/Anelia/OneDrive%20-%20Technological%20University%20Dublin/Coding/CFG%20Introduction%20to%20Web%20Development/Project%20work/Development/Backbone%20html.html">ART FOLK</h1>
+    
+                            </div>
+                    
+                        </div>
+                    </div>
+    
+                </header>
+            </div>
+    
+            <div id="gradient"></div>
+            <form class="searchbox">
+                <input type="search" placeholder="Search for artists, art, inspo..."/>
+                <button type="submit" value="search">&nbsp;</button>
+            </form>
+            
+    
+            <div class="border-box">
+                <a class="home-box" href="home">Home</a>
+                <a class="contact-box" href="contact" >Contact</a>
+                <a class = "about-box" href="about" >About</a>
+            </div>
+
+        </nav>
+        
+        <div class="image">
+        
+            <img src="https://cdn.everydaysight.com/wp-content/uploads/2019/07/blind-painters-artists.jpg" height="300px" width="300px">
+            
+            <img src="https://www.boredpanda.com/blog/wp-content/uploads/2017/06/The-incredible-landmarks-with-minimal-art-style-5940d35f5551f__880.jpg" height="300px">
+            <img src="https://i.pinimg.com/originals/3f/b5/eb/3fb5eb30bbba6ad77d3e969a7943598d.jpg" height="300px" width="300px">
+
+        </div>
+
+        
+    </body>
+
+</html>

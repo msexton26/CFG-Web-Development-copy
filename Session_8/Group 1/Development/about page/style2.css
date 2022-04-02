@@ -1,0 +1,41 @@
+.social {
+    text-decoration: none;
+    color: #111;
+}
+  .fa-youtube {
+    color: #FF0000;
+  }
+  .fa-twitter {
+    color: #1DA1F3
+    ;
+  }
+  .fa-facebook {
+    color: #4267B2
+    ;
+  }
+  .about{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  }
+  .fa-brands{
+  font-size: 15pt;
+  }
+  .aboutus{
+     padding-left: 10px;
+     padding-right: 10px;
+     padding-top: 15px;
+     padding-bottom: 10px;
+  }
+  .description{
+    padding: 10px;
+ }
+ .contact{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.media{
+    padding: 10px;
+     }
